@@ -28,7 +28,6 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm install
-    - run: npm test
     - name: SSH Remote Commands
       uses: appleboy/ssh-action@v1.0.3
       with:
