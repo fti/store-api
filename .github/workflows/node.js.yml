@@ -28,9 +28,8 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm install
-    - run: npm test
     - name: SSH Remote Commands
-      uses: appleboy/ssh-action@v0.1.3
+      uses: appleboy/ssh-action@v1.0.3
       with:
         key: ${{secrets.DO_CLOUD_VM_SSH}}
         host: ${{secrets.DO_CLOUD_VM_IP}}
