@@ -40,3 +40,15 @@ jobs:
           git pull
           npm install
           pm2 start npm -- start
+    - name: SSH Remote Commands
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        password: ${{secrets.LINODE_CLOUD_VM_PASSWORD}}
+        host: ${{secrets.LINODE_CLOUD_VM_IP}}
+        username: ${{secrets.LINODE_CLOUD_VM_USERNAME}}
+        script: |
+          pm2 delete all
+          cd /opt/store-api
+          git pull
+          npm install
+          pm2 start npm -- start
