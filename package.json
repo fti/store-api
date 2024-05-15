@@ -1,5 +1,5 @@
 {
-  "name": "google-play-api",
+  "name": "store-api",
   "version": "1.3.0",
   "description": "turn google play scraper into a RESTful API",
   "type": "module",
@@ -11,11 +11,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facundoolano/google-play-api.git"
+    "url": "https://github.com/fti/store-api.git"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "google-play-scraper": "^10.0.0",
+    "google-play-scraper": "git+https://github.com/fti/google-play-scraper.git",
     "app-store-scraper": "0.18.0"
   },
   "devDependencies": {

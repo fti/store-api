@@ -1,6 +1,12 @@
-# google-play-api
+# store-api
+Combines google-play-scraper and app-store-scrapper on store-api. store-api is forked from google-play-api
 
-Turns [google-play-scraper](https://github.com/facundoolano/google-play-scraper/) into a RESTful API.
+
+Turns [google-play-scraper](https://github.com/fti/google-play-scraper/) into a RESTful API.
+Turns [app-store-scraper](https://github.com/fti/app-store-scraper/) into a RESTful API.
+
+To specify, adding the "?os=ios" parameter functions on the App Store, with the default being Google Play.
+
 
 To run locally:
 
