@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "google-play-scraper": "git+https://github.com/fti/google-play-scraper.git",
-    "app-store-scraper": "0.18.0"
+    "app-store-scraper": "git://github.com/fti/app-store-scraper.git#master",
+    "google-play-scraper": "git://github.com/fti/google-play-scraper.git#main"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
