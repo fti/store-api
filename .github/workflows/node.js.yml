@@ -43,9 +43,9 @@ jobs:
     - name: SSH Remote Commands
       uses: appleboy/ssh-action@v1.0.3
       with:
-        password: ${{secrets.LINODE_CLOUD_VM_PASSWORD}}
-        host: ${{secrets.LINODE_CLOUD_VM_IP}}
-        username: ${{secrets.LINODE_CLOUD_VM_USERNAME}}
+        key: ${{secrets.DO_CLOUD_VM_SSH}}
+        host: ${{secrets.DO_CLOUD_APPPAGE_VM_IP}}
+        username: ${{secrets.DO_CLOUD_VM_USERNAME}}
         script: |
           pm2 delete all
           cd /opt/store-api
