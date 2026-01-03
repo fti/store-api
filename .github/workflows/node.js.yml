@@ -39,6 +39,7 @@ jobs:
           cd /opt/store-api
           git pull
           npm install
+          npm update google-play-scraper
           pm2 start npm -- start
     - name: SSH Remote Commands
       uses: appleboy/ssh-action@v1.0.3
@@ -51,4 +52,5 @@ jobs:
           cd /opt/store-api
           git pull
           npm install
+          npm update google-play-scraper
           pm2 start npm -- start
