@@ -100,3 +100,4 @@ Get categories
 ```http
 GET /api/categories/
 ```
+
